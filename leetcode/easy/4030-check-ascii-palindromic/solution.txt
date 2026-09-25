@@ -1,0 +1,27 @@
+class Solution {
+public:
+    string fxn(string s){
+        string res="";
+        for(int i=0;i<s.length();i++){
+            res += bitset<8>((int)s[i]).to_string();
+        }
+        
+        return res;
+    }
+    bool center(string s){
+        int n = s.length();
+        int j = (n/2)-1;
+        for(int i=n/2;i<n;i++){
+            if(s[j]!=s[i]){
+                // cout<<j<<":"<<s[j]<<" "<<i<<":"<<s[i];
+                return false;
+            }
+            j--;
+        }
+        return true;
+    }
+    bool isPalindromic(string s) {
+        string res = fxn(s);
+        return center(res);
+    }
+};
