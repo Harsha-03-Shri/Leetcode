@@ -1,0 +1,21 @@
+ss Solution {
+public:
+    vector<vector<int>> findDisappearedNumbers(vector<int>& nums, int lower, int upper) {
+        sort(nums.begin(),nums.end());
+
+        int strt = lower,end = lower;
+        vector<vector<int>> soln;
+
+        for(int i=lower;i<=upper;i++){
+
+            if(binary_search(nums.begin(),nums.end(),i)){
+                if(strt != i)soln.push_back({strt,i-1});
+                strt = i+1;
+            }
+        }
+        if(upper >= strt){
+            soln.push_back({strt,upper});
+        }
+        return soln;
+    }
+};
