@@ -1,0 +1,24 @@
+tion {
+public:
+    vector<int> rearrangeArray(vector<int>& nums) {
+        vector<int> ans;
+        map<int,int> mp;
+
+        for(auto x : nums)
+            mp[x]++;
+
+        while(!mp.empty()){
+            for(auto it = mp.begin(); it != mp.end(); ){
+                ans.push_back(it->first);
+                it->second--;
+
+                if(it->second == 0)
+                    it = mp.erase(it);
+                else
+                    it++;
+            }
+        }
+
+        return ans;
+    }
+};
