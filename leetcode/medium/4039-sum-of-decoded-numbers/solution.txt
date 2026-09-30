@@ -1,0 +1,33 @@
+int mod = 1000000007;
+    ll powerMod(ll base,ll exp){
+        ll res = 1;
+        base = base%mod;
+        while(exp>0){
+            if(exp & 1){
+                res = (res*base)%mod;
+            }
+            exp/=2;
+            base = (base* base)%mod;
+        }
+        return res;
+    }
+    int sumDecoded(vector<long long>& nums) {
+        
+        int sum = 0;
+        for(auto it:nums){
+            ll width = it%10;
+            ll d1 = it/10;
+            string s = to_string(d1);
+          
+            string x = s.substr(0,width);
+            
+            string y = s.substr(width);
+
+            ll x1 = stoll(x);
+            ll y1 = stoll(y);
+
+            sum = ((sum%mod) + (powerMod(x1,y1)))%mod;
+        }
+        return sum;
+    }
+};
