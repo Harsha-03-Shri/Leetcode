@@ -1,0 +1,17 @@
+   prev = s[0]-'0';
+
+        for(int i=0;i<n;i++){
+            int curr = s[i]-'0';
+            if(i==0){
+                mini = min(sum - min((s[0]-'0'),10-(s[0]-'0')) + min(s[n-1]-'0',10-(s[n-1]-'0')),mini);
+            }
+            else{
+                int diff1 = min(10-abs(curr-prev),abs(curr-prev));
+                int add = min(10-abs(cnst-prev),abs(cnst-prev));
+                mini = min(mini,sum-diff1+add);
+            }
+            prev = curr;
+        }
+        return mini;
+    }
+};
