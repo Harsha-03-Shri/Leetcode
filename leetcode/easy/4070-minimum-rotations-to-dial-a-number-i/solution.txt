@@ -1,0 +1,15 @@
+class Solution {
+public:
+    int minRotations(string s) {
+        int prev = s[0]-'0';
+        int sum = min(s[0]-'0',10 - (s[0]-'0'));;
+        cout<<sum<<" ";
+        for(int i=1;i<s.length();i++){
+            int curr = s[i]-'0';
+            sum += min(abs(curr-prev),(10-(abs(curr-prev))));
+            // cout<<sum<<":"<<min(abs(curr-prev),(10-(abs(curr-prev))))<<":"<<curr<<":"<<prev<<" ";
+            prev = curr;
+        }
+        return sum;
+    }
+};
