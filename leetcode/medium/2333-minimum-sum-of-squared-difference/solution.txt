@@ -1,0 +1,16 @@
+ {
+            long long cost = (long long)(nums1[i - 1] - nums1[i]) * i;
+            if (cost > k) {
+                long long q = k / i, r = k % i;
+                long long hi = nums1[i - 1] - q;
+                long long ans = hi * hi * (i - r) + (hi - 1) * (hi - 1) * r;
+                for (int j = i; j < n; j++) {
+                    ans += (long long)nums1[j] * nums1[j];
+                }
+                return ans;
+            }
+            k -= cost;
+        }
+        return 0;
+    }
+};
