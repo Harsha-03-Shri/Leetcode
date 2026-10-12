@@ -1,0 +1,30 @@
+ll sum=0;
+        stack<int>st;
+        unordered_map<int,int>mp;
+
+        for(auto it:nums){
+            if(st.empty()){
+                st.push(it);
+                mp[it]++;
+                continue;
+            }
+            while(!st.empty() && it < st.top()){
+                sum += 1LL*st.size()-mp[st.top()];
+                mp[st.top()]--;
+                if(mp[st.top()]==0)mp.erase(st.top());
+                st.pop();
+            }
+            st.push(it);
+            mp[it]++;
+        }
+       
+        while(!st.empty()){
+            ll add = st.size() - mp[st.top()];
+            sum += add ;
+            mp[st.top()]--;
+            if(mp[st.top()]==0)mp.erase(st.top());
+            st.pop();
+        }
+        return sum;
+    }
+};
