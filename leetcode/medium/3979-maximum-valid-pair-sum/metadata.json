@@ -1,0 +1,23 @@
+{
+  "title": "Maximum Valid Pair Sum",
+  "titleSlug": "maximum-valid-pair-sum",
+  "frontendQuestionId": "3979",
+  "leetcodeUrl": "https://leetcode.com/problems/maximum-valid-pair-sum/",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Enumeration"
+  ],
+  "language": "Unknown",
+  "verdict": "Accepted",
+  "submissionId": null,
+  "submittedAt": "2026-10-16T08:29:06.592Z",
+  "runtimeMs": null,
+  "memoryKb": null,
+  "totalCorrect": null,
+  "totalTestcases": null,
+  "helpType": "PENDING_SELF_REPORT",
+  "helpLabel": "Pending self report",
+  "focusSeconds": null,
+  "syncedAt": "2026-10-16T08:29:08.621Z"
+}
