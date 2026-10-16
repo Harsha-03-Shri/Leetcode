@@ -1,0 +1,23 @@
+{
+  "title": "Unique Middle Element",
+  "titleSlug": "unique-middle-element",
+  "frontendQuestionId": "3978",
+  "leetcodeUrl": "https://leetcode.com/problems/unique-middle-element/",
+  "difficulty": "Easy",
+  "topics": [
+    "Array",
+    "Counting"
+  ],
+  "language": "Unknown",
+  "verdict": "Accepted",
+  "submissionId": null,
+  "submittedAt": "2026-10-16T07:59:41.450Z",
+  "runtimeMs": null,
+  "memoryKb": null,
+  "totalCorrect": null,
+  "totalTestcases": null,
+  "helpType": "PENDING_SELF_REPORT",
+  "helpLabel": "Pending self report",
+  "focusSeconds": null,
+  "syncedAt": "2026-10-16T07:59:43.548Z"
+}

@@ -1,0 +1,17 @@
+class Solution {
+public:
+    bool isMiddleElementUnique(vector<int>& nums) {
+        int n = nums.size();
+
+        if(n==1)return true;
+        int midEle = nums[n/2];
+
+        sort(nums.begin(),nums.end());
+
+        int cnt=0;
+        for(auto it:nums){
+            if(it==midEle)cnt++;
+        }
+        return cnt==1;
+    }
+};
