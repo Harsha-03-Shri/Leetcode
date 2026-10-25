@@ -1,0 +1,32 @@
+class Solution {
+public:
+    typedef long long ll;
+    long long maximizeSum(vector<int>& nums, int k) {
+        int n = nums.size();
+
+        priority_queue<pair<int,int>,vector<pair<int,int>>,greater<pair<int,int>>>pq;
+
+        int i=0;
+
+        while(i<n){
+            string s = to_string(nums[i]);
+            sort(s.begin(),s.end(),greater<int>());
+
+            pq.push({stoi(s)-nums[i],i});
+            if(pq.size() > k)pq.pop();
+            i++;
+        }
+
+        ll sum=0;
+        while(!pq.empty()){
+            auto [num,id] = pq.top();
+            pq.pop();
+
+            sum += 1LL*num + 1LL*nums[id];
+            nums[id] = 0;
+        }
+
+        for(auto it:nums)sum += 1LL*it;
+        return sum;
+    }
+};
