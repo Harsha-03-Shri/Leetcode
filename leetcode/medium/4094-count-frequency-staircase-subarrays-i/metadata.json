@@ -1,0 +1,20 @@
+{
+  "title": "Count Frequency Staircase Subarrays I",
+  "titleSlug": "count-frequency-staircase-subarrays-i",
+  "frontendQuestionId": "4094",
+  "leetcodeUrl": "https://leetcode.com/problems/count-frequency-staircase-subarrays-i/",
+  "difficulty": "Medium",
+  "topics": [],
+  "language": "Unknown",
+  "verdict": "Accepted",
+  "submissionId": null,
+  "submittedAt": "2026-10-25T08:51:59.152Z",
+  "runtimeMs": null,
+  "memoryKb": null,
+  "totalCorrect": null,
+  "totalTestcases": null,
+  "helpType": "PENDING_SELF_REPORT",
+  "helpLabel": "Pending self report",
+  "focusSeconds": null,
+  "syncedAt": "2026-10-25T08:52:01.429Z"
+}

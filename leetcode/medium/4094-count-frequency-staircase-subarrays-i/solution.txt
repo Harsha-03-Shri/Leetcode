@@ -1,0 +1,22 @@
+               mp[nums[j]]++;
+
+                int size = mp.size();
+
+                if(size * (size + 1) / 2 == j - i + 1){
+                    bool flag = true;
+
+                    for(int k = 0; k < size; k++){
+                        if(mp[order[k]] != k + 1){
+                            flag = false;
+                            break;
+                        }
+                    }
+
+                    if(flag) cnt++;
+                }
+            }
+        }
+
+        return cnt;
+    }
+};
