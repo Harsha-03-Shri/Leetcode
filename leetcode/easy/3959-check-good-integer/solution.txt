@@ -1,0 +1,14 @@
+class Solution {
+public:
+    typedef long long ll;
+    bool checkGoodInteger(int n) {
+        ll sum=0,sqsum=0;
+        while(n>0){
+            int x = n%10;
+            sum += 1LL*x;
+            sqsum += 1LL*x*x;
+            n/=10; 
+        }
+        return sqsum - sum >= 50;
+    }
+};

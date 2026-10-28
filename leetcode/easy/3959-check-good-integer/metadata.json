@@ -1,0 +1,23 @@
+{
+  "title": "Check Good Integer",
+  "titleSlug": "check-good-integer",
+  "frontendQuestionId": "3959",
+  "leetcodeUrl": "https://leetcode.com/problems/check-good-integer/",
+  "difficulty": "Easy",
+  "topics": [
+    "Math",
+    "Simulation"
+  ],
+  "language": "Unknown",
+  "verdict": "Accepted",
+  "submissionId": null,
+  "submittedAt": "2026-10-28T12:46:42.274Z",
+  "runtimeMs": null,
+  "memoryKb": null,
+  "totalCorrect": null,
+  "totalTestcases": null,
+  "helpType": "PENDING_SELF_REPORT",
+  "helpLabel": "Pending self report",
+  "focusSeconds": null,
+  "syncedAt": "2026-10-28T12:46:44.492Z"
+}
