@@ -1,0 +1,32 @@
+<=n;i++){
+            if(n%i==0)return i;
+        }
+        return -1;
+    }
+
+    int smallestPrimeFactor(int v) {
+        for (long long i = 2; i * i <= v; i++) {
+            if (v % i == 0) return i;
+        }
+        return v;   
+    }
+
+
+    long long minimumMaxValue(int n, int index, int value) {
+        
+        if(index > 0 && isprime(value) || index==0 && value==1)return -1;
+
+
+        if( ! ((value - smallestPrimeFactor(value))/2  >= index))return -1;
+        if(index == n-1)return value;
+            if (isprime(value)) {
+        return 2LL * value + 2LL * (n - 2);
+    }
+
+        if(value%2==0){
+            return 1LL*(n-index-1)*2 + 1LL*value;
+        }
+
+        return 1LL*(n-index-2)*2 + 1LL*value + 1LL*minDivisor(value);
+    }
+};
