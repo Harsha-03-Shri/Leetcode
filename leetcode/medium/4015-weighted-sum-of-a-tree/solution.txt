@@ -1,0 +1,28 @@
+class Solution {
+public:
+    typedef long long ll;
+    long long weightedSum(vector<int>& parent, vector<int>& nums) {
+        int n = parent.size(),d=0,h=0;
+        if(n==1)return nums[0];
+        vector<vector<int>> adj(n);
+        ll sum=0;
+        for(int i=1;i<n;i++){
+            adj[parent[i]].push_back(i);
+        }
+        vector<int>depth(n,0);
+        depth[0] = 1;
+
+        queue<int>q;
+        q.push(0);
+
+        while(!q.empty()){
+            int node = q.front();
+            q.pop();
+            for(auto it:adj[node]){
+                q.push(it);
+                depth[it] = depth[node] + 1;
+                h = max(depth[it],h);
+            }
+        }
+
+        for(int
