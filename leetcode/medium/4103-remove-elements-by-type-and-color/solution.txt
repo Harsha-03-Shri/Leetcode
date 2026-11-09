@@ -1,0 +1,20 @@
+  else if(types[st.top().first]==types[i] && colors[st.top().first]==colors[i]){
+                auto [id,count] = st.top();
+                st.push({i,count+1});
+            }
+            else{
+                st.push({i,1});
+            }
+            while(!st.empty() && groupSize[types[st.top().first]]<=st.top().second){
+
+                int x = groupSize[types[st.top().first]];
+
+                for(int j=0;!st.empty() && j<x;j++){
+                    st.pop();
+                }
+            }
+        }
+
+        return st.empty();
+    }
+};
