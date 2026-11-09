@@ -1,4 +1,5 @@
-  else if(types[st.top().first]==types[i] && colors[st.top().first]==colors[i]){
+  }
+            else if(types[st.top().first]==types[i] && colors[st.top().first]==colors[i]){
                 auto [id,count] = st.top();
                 st.push({i,count+1});
             }
