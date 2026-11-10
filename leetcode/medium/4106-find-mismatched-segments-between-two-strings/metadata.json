@@ -1,0 +1,20 @@
+{
+  "title": "Find Mismatched Segments Between Two Strings",
+  "titleSlug": "find-mismatched-segments-between-two-strings",
+  "frontendQuestionId": "4106",
+  "leetcodeUrl": "https://leetcode.com/problems/find-mismatched-segments-between-two-strings/",
+  "difficulty": "Medium",
+  "topics": [],
+  "language": "Unknown",
+  "verdict": "Accepted",
+  "submissionId": null,
+  "submittedAt": "2026-11-10T05:43:00.845Z",
+  "runtimeMs": null,
+  "memoryKb": null,
+  "totalCorrect": null,
+  "totalTestcases": null,
+  "helpType": "PENDING_SELF_REPORT",
+  "helpLabel": "Pending self report",
+  "focusSeconds": null,
+  "syncedAt": "2026-11-10T05:43:04.210Z"
+}
