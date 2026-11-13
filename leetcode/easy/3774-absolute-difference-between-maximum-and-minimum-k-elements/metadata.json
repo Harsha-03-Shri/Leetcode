@@ -1,0 +1,23 @@
+{
+  "title": "Absolute Difference Between Maximum and Minimum K Elements",
+  "titleSlug": "absolute-difference-between-maximum-and-minimum-k-elements",
+  "frontendQuestionId": "3774",
+  "leetcodeUrl": "https://leetcode.com/problems/absolute-difference-between-maximum-and-minimum-k-elements/",
+  "difficulty": "Easy",
+  "topics": [
+    "Array",
+    "Sorting"
+  ],
+  "language": "Unknown",
+  "verdict": "Accepted",
+  "submissionId": null,
+  "submittedAt": "2026-11-13T11:04:46.076Z",
+  "runtimeMs": null,
+  "memoryKb": null,
+  "totalCorrect": null,
+  "totalTestcases": null,
+  "helpType": "PENDING_SELF_REPORT",
+  "helpLabel": "Pending self report",
+  "focusSeconds": null,
+  "syncedAt": "2026-11-13T11:04:48.036Z"
+}
