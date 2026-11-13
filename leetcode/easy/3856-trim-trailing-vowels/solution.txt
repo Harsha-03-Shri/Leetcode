@@ -1,0 +1,20 @@
+class Solution {
+public:
+    string trimTrailingVowels(string s) {
+        vector<char> vowels = {'a','e','i','o','u'};
+        int n = s.length();
+        bool flag = true;
+        string ns = "";
+
+        for(int i=n-1;i>=0;i--){
+            if(binary_search(vowels.begin(),vowels.end(),s[i]) && flag){
+                // cout<<s[i]<<"\n";
+                continue;
+            }
+            else flag = false;
+
+            ns = s[i] + ns;
+        }
+        return ns;
+    }
+};

@@ -1,0 +1,22 @@
+{
+  "title": "Trim Trailing Vowels",
+  "titleSlug": "trim-trailing-vowels",
+  "frontendQuestionId": "3856",
+  "leetcodeUrl": "https://leetcode.com/problems/trim-trailing-vowels/",
+  "difficulty": "Easy",
+  "topics": [
+    "String"
+  ],
+  "language": "Unknown",
+  "verdict": "Accepted",
+  "submissionId": null,
+  "submittedAt": "2026-11-13T11:01:21.684Z",
+  "runtimeMs": null,
+  "memoryKb": null,
+  "totalCorrect": null,
+  "totalTestcases": null,
+  "helpType": "PENDING_SELF_REPORT",
+  "helpLabel": "Pending self report",
+  "focusSeconds": null,
+  "syncedAt": "2026-11-13T11:01:24.150Z"
+}
