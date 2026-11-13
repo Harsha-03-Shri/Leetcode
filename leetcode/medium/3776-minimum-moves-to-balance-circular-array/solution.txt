@@ -1,0 +1,23 @@
+{
+                    int mini = min(abs(balance[l]),abs(balance[i]));
+                    balance[l]-=mini;
+                    balance[i]+=mini;
+                    ops += 1ll*lcost*mini;
+                }
+                l = (l-1+n)%n;
+                lcost ++;
+                // cout<<balance[i];
+                if(balance[r] > 0 && balance[i] < 0){
+                    int mini = min(abs(balance[r]),abs(balance[i]));
+                    balance[r]-=mini;
+                    balance[i]+=mini;
+                    ops += 1ll*rcost*mini;
+                }
+                r = (r+1+n)%n;
+                rcost++;
+                if((l==i || r==i) && balance[i] < 0)return -1;
+            }
+        }
+        return ops;
+    }
+};

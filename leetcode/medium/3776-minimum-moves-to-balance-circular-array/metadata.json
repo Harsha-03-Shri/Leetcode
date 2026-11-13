@@ -1,0 +1,24 @@
+{
+  "title": "Minimum Moves to Balance Circular Array",
+  "titleSlug": "minimum-moves-to-balance-circular-array",
+  "frontendQuestionId": "3776",
+  "leetcodeUrl": "https://leetcode.com/problems/minimum-moves-to-balance-circular-array/",
+  "difficulty": "Medium",
+  "topics": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "language": "Unknown",
+  "verdict": "Accepted",
+  "submissionId": null,
+  "submittedAt": "2026-11-13T11:54:45.701Z",
+  "runtimeMs": null,
+  "memoryKb": null,
+  "totalCorrect": null,
+  "totalTestcases": null,
+  "helpType": "PENDING_SELF_REPORT",
+  "helpLabel": "Pending self report",
+  "focusSeconds": null,
+  "syncedAt": "2026-11-13T11:54:47.945Z"
+}
