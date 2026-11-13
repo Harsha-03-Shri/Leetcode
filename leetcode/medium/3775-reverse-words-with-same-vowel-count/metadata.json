@@ -1,0 +1,24 @@
+{
+  "title": "Reverse Words With Same Vowel Count",
+  "titleSlug": "reverse-words-with-same-vowel-count",
+  "frontendQuestionId": "3775",
+  "leetcodeUrl": "https://leetcode.com/problems/reverse-words-with-same-vowel-count/",
+  "difficulty": "Medium",
+  "topics": [
+    "Two Pointers",
+    "String",
+    "Simulation"
+  ],
+  "language": "Unknown",
+  "verdict": "Accepted",
+  "submissionId": null,
+  "submittedAt": "2026-11-13T11:18:03.509Z",
+  "runtimeMs": null,
+  "memoryKb": null,
+  "totalCorrect": null,
+  "totalTestcases": null,
+  "helpType": "PENDING_SELF_REPORT",
+  "helpLabel": "Pending self report",
+  "focusSeconds": null,
+  "syncedAt": "2026-11-13T11:18:05.693Z"
+}

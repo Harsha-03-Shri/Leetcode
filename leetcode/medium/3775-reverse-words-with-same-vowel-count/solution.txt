@@ -1,0 +1,34 @@
+;
+        int cnt = 0,X=0,i;
+
+        for(i=0;i<s.length() && s[i]!=' ';i++){
+            if(st.count(s[i]))X++;
+            mainS += s[i];
+        }
+        
+        for(i;i<s.length();i++){
+            auto it = s[i];
+            if(it==' '){
+                if(cnt==X){
+                    reverse(ns.begin(),ns.end());
+                    mainS += ns;
+                }
+                else mainS += ns;
+
+                mainS += ' ';
+                ns = "";
+                cnt=0;
+            }
+            else{
+                ns += it;
+                if(st.count(it))cnt++;
+            }
+        }
+                        if(cnt==X){
+                    reverse(ns.begin(),ns.end());
+                    mainS += ns;
+                }
+                else mainS += ns;
+        return mainS;
+    }
+};
