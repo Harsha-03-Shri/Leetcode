@@ -1,0 +1,25 @@
+].push_back(x);
+                sum += x;
+                mini = min(x,mini);
+            }
+        }
+
+        if(op[node] && flag){
+            sum-= mini;
+        }
+        else if(mini < 0 && flag){
+            sum -= mini;
+        }
+        return sum;
+    }
+    int maxScore(vector<int>& parent, vector<int>& op, vector<int>& score) {
+        int n = parent.size();
+        vector<vector<int>> sums(n),nodes(n);
+
+        for(int i=1;i<n;i++){
+            nodes[parent[i]].push_back(i);
+        }
+       vector<int>vis(n,0);
+       return dfs(0,nodes,vis,sums,score,op);
+    }
+};
