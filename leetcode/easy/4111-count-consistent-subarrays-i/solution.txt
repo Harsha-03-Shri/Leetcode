@@ -1,0 +1,18 @@
+class Solution {
+public:
+    int countConsistent(vector<int>& nums) {
+        int n = nums.size(),sum=0;
+
+        for(int i=0;i<n;i++){
+            int ele = nums[i];
+            int mini = nums[i];
+            sum+=1;
+            for(int j=i+1;j<n;j++){
+                mini = min(nums[j],mini);
+                ele &= nums[j];
+                if(ele == mini)sum++;
+            }
+        }
+        return sum;
+    }
+};
