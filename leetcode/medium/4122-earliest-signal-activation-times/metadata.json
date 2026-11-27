@@ -1,0 +1,20 @@
+{
+  "title": "Earliest Signal Activation Times",
+  "titleSlug": "earliest-signal-activation-times",
+  "frontendQuestionId": "4122",
+  "leetcodeUrl": "https://leetcode.com/problems/earliest-signal-activation-times/",
+  "difficulty": "Medium",
+  "topics": [],
+  "language": "Unknown",
+  "verdict": "Accepted",
+  "submissionId": null,
+  "submittedAt": "2026-11-27T10:21:17.951Z",
+  "runtimeMs": null,
+  "memoryKb": null,
+  "totalCorrect": null,
+  "totalTestcases": null,
+  "helpType": "PENDING_SELF_REPORT",
+  "helpLabel": "Pending self report",
+  "focusSeconds": null,
+  "syncedAt": "2026-11-27T10:21:19.854Z"
+}

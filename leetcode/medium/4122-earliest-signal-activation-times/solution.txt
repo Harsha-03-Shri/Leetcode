@@ -1,0 +1,35 @@
+vector<long long> earliestActivationTimes(int n, vector<vector<int>>& edges, vector<int>& requiredSignals) {
+        vector<ll>res(n,-1);
+        vector<int>vis(n,0);
+
+        vector<vector<pair<int,int>>> adj = adjL(n,edges);
+        requiredSignals[0] = 0;
+
+       priority_queue<pair<ll, ll>, vector<pair<ll, ll>>, greater<pair<ll, ll>>> q;
+
+        q.push({0,0});
+        
+
+        while(!q.empty()){
+            auto [t,node] = q.top();
+            q.pop();
+
+            requiredSignals[node]--;
+            if(requiredSignals[node]>0 || vis[node])continue;
+
+            // cout<<node<<":"<<t<<"\n";
+
+            res[node] = 1ll*t;
+            vis[node] = 1;
+
+            for(auto it:adj[node]){
+                auto [x,d] = it;
+
+                if(!vis[x]){
+                    q.push({1ll*(t+d),x});
+                }
+            }
+        }
+        return res;
+    }
+};
